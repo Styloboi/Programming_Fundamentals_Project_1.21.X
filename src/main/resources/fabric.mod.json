@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pfproject",
+	"version": "${version}",
+	"name": "PF Project",
+	"description": "Here you can witness my first ever minecraft mod, this was made for my 110 Programming Fundamentals I class at CWU",
+	"authors": [
+		"Alexis Birrueta!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pfproject/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.styloboi.pfproject.PFProject"
+		],
+		"fabric-datagen": [
+			"com.styloboi.pfproject.PFProjectDataGenerator"
+		],
+		"client": [
+			"com.styloboi.pfproject.PFProjectClient"
+		]
+	},
+	"mixins": [
+		"pfproject.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
